@@ -1,0 +1,7 @@
+FROM python:3.8
+LABEL maintainer: "Hetic"
+
+RUN pip install scikit-learn
+
+COPY train.py /train.py
+CMD ["python", "train.py"]
